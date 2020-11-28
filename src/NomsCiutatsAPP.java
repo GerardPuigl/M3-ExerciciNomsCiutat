@@ -7,10 +7,10 @@ public class NomsCiutatsAPP {
 
 		String[] ciutat = new String[6];
 
+		System.out.println("Introdueix el nom de 6 ciutats:");
+		
 		for (int i = 0; i < 6; i++) {
-			
-			System.out.println("Introdueix el nom de la ciutat número "+(i+1)+":");
-			
+			 
 			Scanner sc = new Scanner(System.in);
 			ciutat[i] = sc.next();
 		}
