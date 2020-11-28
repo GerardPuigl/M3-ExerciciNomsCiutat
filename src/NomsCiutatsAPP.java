@@ -29,25 +29,9 @@ public class NomsCiutatsAPP {
 		System.out.println(ciutat5);
 		System.out.println(ciutat6);
 		
-		/* A continuación como creo que se debería hacer si el ejercicio no dijera especificamente utilizar variables String en vez de Array.
+		// Afegir noms en array
 		
-		// Crear 6 variables String y pedir por consolsa introducir nombres
-
-		String[] ciutat = new String[6];
-
-		System.out.println("Introdueix el nom de 6 ciutats:");
-		
-		for (int i = 0; i < 6; i++) {
-			 
-			Scanner sc = new Scanner(System.in);
-			ciutat[i] = sc.next();
-		}
-		
-		for (String c:ciutat) {
-			System.out.println(c);
-		}
-		*/
-		
+		String[] arrayCiutats = new arrayCiutats[6];
 	}
 
 }
