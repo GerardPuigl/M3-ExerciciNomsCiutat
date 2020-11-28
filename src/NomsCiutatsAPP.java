@@ -21,12 +21,20 @@ public class NomsCiutatsAPP {
 			arrayCiutats.add(s);
 		}
 		
-		// Ordenar Array
+	
+		//Cambiar las 'a' por '4'
+		ArrayList<String> arrayCiutatsModificada = new ArrayList();
 		
-		Collections.sort(arrayCiutats);
+		for (String s:arrayCiutats) {
+			s=s.replace('a', '4');
+			arrayCiutatsModificada.add(s);
+		}
 
-		System.out.println(arrayCiutats);
-
+		// Ordenar Array
+		Collections.sort(arrayCiutatsModificada);
+		
+		System.out.println(arrayCiutatsModificada);
+		
 	}
 
 }
