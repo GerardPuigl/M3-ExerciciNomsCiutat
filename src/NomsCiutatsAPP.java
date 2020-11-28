@@ -4,6 +4,22 @@ public class NomsCiutatsAPP {
 	public static void main(String[] arg) {
 
 		// Crear 6 variables String y pedir por consolsa introducir nombres ciudades
+
+		String[] ciutat = new String[6];
+
+		System.out.println("Introdueix el nom de 6 ciutats:");
+		
+		for (int i = 0; i < 6; i++) {
+			 
+			Scanner sc = new Scanner(System.in);
+			ciutat[i] = sc.next();
+		}
+		
+		for (String c:ciutat) {
+			System.out.println(c);
+		}
+		
+		/* Por si el ejercicio se debía hacer sin usar Array de variables.
 		
 		String ciutat1;
 		String ciutat2;
@@ -28,24 +44,6 @@ public class NomsCiutatsAPP {
 		System.out.println(ciutat4);
 		System.out.println(ciutat5);
 		System.out.println(ciutat6);
-		
-		/* A continuación como creo que se debería hacer si el ejercicio no dijera especificamente utilizar variables String en vez de Array.
-		
-		// Crear 6 variables String y pedir por consolsa introducir nombres
-
-		String[] ciutat = new String[6];
-
-		System.out.println("Introdueix el nom de 6 ciutats:");
-		
-		for (int i = 0; i < 6; i++) {
-			 
-			Scanner sc = new Scanner(System.in);
-			ciutat[i] = sc.next();
-		}
-		
-		for (String c:ciutat) {
-			System.out.println(c);
-		}
 		*/
 		
 	}
