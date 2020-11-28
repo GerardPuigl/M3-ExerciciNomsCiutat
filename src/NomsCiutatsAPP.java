@@ -3,6 +3,8 @@ import java.util.*;
 public class NomsCiutatsAPP {
 	public static void main(String[] arg) {
 
+		// Crear 6 variables String y pedir por consolsa introducir nombres ciudades
+		
 		String ciutat1;
 		String ciutat2;
 		String ciutat3;
