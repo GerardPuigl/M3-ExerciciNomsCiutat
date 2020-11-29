@@ -2,8 +2,8 @@ import java.util.*;
 
 public class NomsCiutatsAPP {
 	public static void main(String[] arg) {
-		
-		// Crear 6 variables String y pedir por consolsa introducir nombres
+
+		// Crear 6 variables String y pedir por consolsa introducir nombres ciudades
 
 		String[] ciutat = new String[6];
 		
@@ -21,7 +21,7 @@ public class NomsCiutatsAPP {
 		for (String s : ciutat) {
 			arrayCiutats.add(s);
 		}
-	
+
 		// Ordenar ArrayList
 		
 		Collections.sort(arrayCiutats);
