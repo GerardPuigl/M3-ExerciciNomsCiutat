@@ -21,19 +21,31 @@ public class NomsCiutatsAPP {
 		for (String s : ciutat) {
 			arrayCiutats.add(s);
 		}
-			
-		//Ordeonar en Ciudades en diferentes Array e imprimir en orden inverso sus letras
+	
+		// Ordenar ArrayList
+		
+		Collections.sort(arrayCiutats);
+
+		System.out.println(arrayCiutats);
+	
+		//Ordeonar en Ciudades en diferentes ArrayList e imprimir en orden inverso sus letras
 		
 		ArrayList<Character> lletresCiutats = new ArrayList<Character>();
 		
 		for (String c:arrayCiutats) {
+			
 			for (int i = 0; i < c.length(); i++) {
 				lletresCiutats.add(c.charAt(i));
 			}
-			for (int j = c.length()-1; j >= 0 ; j--) {
+		
+			for (int j = c.length()-1; j >= 0 ; j--) { 			//Imprime sin comas
 				System.out.print(lletresCiutats.get(j));		
 			}
 			System.out.println("");
+			
+			Collections.reverse(lletresCiutats);				//Imprime comas y braquets
+
+			System.out.println(lletresCiutats);
 			lletresCiutats.clear();
 		}
 
