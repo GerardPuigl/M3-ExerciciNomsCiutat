@@ -27,18 +27,32 @@ public class NomsCiutatsAPP {
 		
 		int numeroCiutat=0;
 		
-		for (String city:arrayCiutats) {
+		for (String c:arrayCiutats) {
 			
 			lletresCiutats.add(new ArrayList<Character>());
 			
-			for (int i = 0; i < city.length(); i++) {
-				lletresCiutats.get(0).add(city.charAt(i));
+			for (int i = 0; i < c.length(); i++) {
+				lletresCiutats.get(0).add(c.charAt(i));
 			}
 			numeroCiutat++;
 		
 		}
 
-		System.out.println(lletresCiutats);	
+
+		numeroCiutat=0;
+		for (String c:arrayCiutats) {
+
+			System.out.println(c.length());
+			
+			for (int j = c.length(); j > 0 ; j--) {
+				System.out.print(lletresCiutats.get(numeroCiutat).get(j-1));
+								
+			}
+			numeroCiutat++;
+			System.out.println("");
+		
+		}
+
 	}
 
 }
