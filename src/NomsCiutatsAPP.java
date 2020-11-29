@@ -2,10 +2,10 @@ import java.util.*;
 
 public class NomsCiutatsAPP {
 	public static void main(String[] arg) {
-		
-		// Crear 6 variables String y pedir por consolsa introducir nombres
 
-		String[] ciutat = new String[6];
+		// Crear 6 variables String y pedir por consolsa introducir nombres ciudades
+
+    String[] ciutat = new String[6];
 		System.out.println("Introdueix el nom de 6 ciutats:");
 
 		for (int i = 0; i < 6; i++) {
@@ -49,7 +49,6 @@ public class NomsCiutatsAPP {
 			}
 			numeroCiutat++;
 		}
-
 
 		numeroCiutat=0;
 		for (String c:arrayCiutats) {
