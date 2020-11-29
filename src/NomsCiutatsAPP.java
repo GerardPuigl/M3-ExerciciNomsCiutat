@@ -2,7 +2,7 @@ import java.util.*;
 
 public class NomsCiutatsAPP {
 	public static void main(String[] arg) {
-
+		
 		// Crear 6 variables String y pedir por consolsa introducir nombres
 
 		String[] ciutat = new String[6];
@@ -23,18 +23,22 @@ public class NomsCiutatsAPP {
 		
 	
 		//Cambiar las 'a' por '4'
-		ArrayList<String> arrayCiutatsModificada = new ArrayList();
+		ArrayList<ArrayList<Character>> lletresCiutats = new ArrayList();
 		
-		for (String s:arrayCiutats) {
-			s=s.replace('a', '4');
-			arrayCiutatsModificada.add(s);
+		int numeroCiutat=0;
+		
+		for (String city:arrayCiutats) {
+			
+			lletresCiutats.add(new ArrayList<Character>());
+			
+			for (int i = 0; i < city.length(); i++) {
+				lletresCiutats.get(0).add(city.charAt(i));
+			}
+			numeroCiutat++;
+		
 		}
 
-		// Ordenar Array
-		Collections.sort(arrayCiutatsModificada);
-		
-		System.out.println(arrayCiutatsModificada);
-		
+		System.out.println(lletresCiutats);	
 	}
 
 }
