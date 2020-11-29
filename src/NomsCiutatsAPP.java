@@ -6,6 +6,7 @@ public class NomsCiutatsAPP {
 		// Crear 6 variables String y pedir por consolsa introducir nombres
 
 		String[] ciutat = new String[6];
+		
 		System.out.println("Introdueix el nom de 6 ciutats:");
 
 		for (int i = 0; i < 6; i++) {
@@ -20,31 +21,20 @@ public class NomsCiutatsAPP {
 		for (String s : ciutat) {
 			arrayCiutats.add(s);
 		}
-		
-	
-		//Ordeonar en Ciudades en diferentes Array e imprimir en orden inverso sus letras
-		ArrayList<ArrayList<Character>> lletresCiutats = new ArrayList();
-		
-		int numeroCiutat=0;
-		for (String c:arrayCiutats) {
-			lletresCiutats.add(new ArrayList<Character>());
-		
-			for (int i = 0; i < c.length(); i++) {
-				lletresCiutats.get(numeroCiutat).add(c.charAt(i));
-			}
-			numeroCiutat++;
-		}
-
-
-		numeroCiutat=0;
-		for (String c:arrayCiutats) {
 			
-			for (int j = c.length()-1; j >= 0 ; j--) {
-				System.out.print(lletresCiutats.get(numeroCiutat).get(j));		
-			}
-			numeroCiutat++;
-			System.out.println("");
+		//Ordeonar en Ciudades en diferentes Array e imprimir en orden inverso sus letras
 		
+		ArrayList<Character> lletresCiutats = new ArrayList<Character>();
+		
+		for (String c:arrayCiutats) {
+			for (int i = 0; i < c.length(); i++) {
+				lletresCiutats.add(c.charAt(i));
+			}
+			for (int j = c.length()-1; j >= 0 ; j--) {
+				System.out.print(lletresCiutats.get(j));		
+			}
+			System.out.println("");
+			lletresCiutats.clear();
 		}
 
 	}
