@@ -21,8 +21,23 @@ public class NomsCiutatsAPP {
 			arrayCiutats.add(s);
 		}
 		
+		// Ordenar Array
+		
+		Collections.sort(arrayCiutats);
+
+		System.out.println(arrayCiutats);
 	
+		//Cambiar las 'a' por '4'
+
+		ArrayList<String> arrayCiutatsModificada = new ArrayList();
+		
+		for (String s:arrayCiutats) {
+			s=s.replace('a', '4');
+			arrayCiutatsModificada.add(s);
+		}
+
 		//Ordeonar en Ciudades en diferentes Array e imprimir en orden inverso sus letras
+		
 		ArrayList<ArrayList<Character>> lletresCiutats = new ArrayList();
 		
 		int numeroCiutat=0;
