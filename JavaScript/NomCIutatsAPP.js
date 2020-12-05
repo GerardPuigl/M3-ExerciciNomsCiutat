@@ -20,17 +20,14 @@ ciutats.forEach(s => {
 
 var lletresCiutats = new Array;
 
-
 ciutats.sort();
 
-ciutats.forEach(c => {
-
-    c=c.reverse();
-
-    c.forEach(l =>{
-        lletresCiutats.push(l)
-    })
+ciutats.forEach(c=>{
     
-});
-
-document.writeln()
+    lletresCiutats=Array.from(c);
+    lletresCiutats.reverse();
+    lletresCiutats.forEach(l => {document.writeln(l);})
+    document.write("<br/>");
+    
+    
+})
