@@ -6,6 +6,7 @@ public class NomsCiutatsAPP {
 		Scanner sc = new Scanner(System.in);
 
 		// Crear 6 variables String y pedir por consolsa introducir nombres ciudades
+		
 		System.out.println("Introdueix el nom de 6 ciutats:");
 
 		String ciutat1 = sc.next();
@@ -15,28 +16,20 @@ public class NomsCiutatsAPP {
 		String ciutat5 = sc.next();
 		String ciutat6 = sc.next();
 
-		String[] ciutat = new String[6];
-
-		ciutat[0]=ciutat1;
-		ciutat[1]=ciutat2;
-		ciutat[2]=ciutat3;
-		ciutat[3]=ciutat4;
-		ciutat[4]=ciutat5;
-		ciutat[5]=ciutat6;
-		
 		// Convertir a Arraylist
 
-		ArrayList<String> arrayCiutats = new ArrayList();
+		String[] arrayCiutats = new String[6];
 
-		for (String s : ciutat) {
-			arrayCiutats.add(s);
-		}
-		
-		// Ordenar Array
-		
-		Collections.sort(arrayCiutats);
+		arrayCiutats[0] = ciutat1;
+		arrayCiutats[1] = ciutat2;
+		arrayCiutats[2] = ciutat3;
+		arrayCiutats[3] = ciutat4;
+		arrayCiutats[4] = ciutat5;
+		arrayCiutats[5] = ciutat6;
 
-		System.out.println(arrayCiutats);
+		Arrays.sort(arrayCiutats);
+
+		System.out.println(Arrays.toString(arrayCiutats));
 
 	}
 
