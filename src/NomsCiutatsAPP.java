@@ -41,8 +41,8 @@ public class NomsCiutatsAPP {
 		// Ordenar Array
 		Arrays.sort(arrayCiutatsModificades);
 
-		System.out.println(Arrays.toString(arrayCiutats));
-		System.out.println(Arrays.toString(arrayCiutatsModificades));
+		System.out.println("\nArray Ciutats:\n" + Arrays.toString(arrayCiutats));
+		System.out.println("\nArray Ciutats Modificada:\n" + Arrays.toString(arrayCiutatsModificades));
 
 		// Creeu un nou array per cada una de les ciutats que tenim.
 
@@ -63,6 +63,8 @@ public class NomsCiutatsAPP {
 		arrayCiutat6 = arrayCiutats[5].toCharArray();
 
 		// Mostreu per consola els nous arrays amb els noms invertits
+
+		System.out.println("\nCiutats en ordre invers:");
 
 		for (int i = arrayCiutat1.length - 1; i >= 0; i--) {
 			System.out.print(arrayCiutat1[i]);
@@ -88,7 +90,7 @@ public class NomsCiutatsAPP {
 			System.out.print(arrayCiutat5[i]);
 		}
 		System.out.println("");
-		
+
 		for (int i = arrayCiutat6.length - 1; i >= 0; i--) {
 			System.out.print(arrayCiutat6[i]);
 		}
