@@ -1,22 +1,10 @@
-import java.util.*;
-
 import javax.swing.JOptionPane;
 
 public class MitjanaAlumnes {
 
 	public static void main(String[] arg) {
 
-		/*
-		 * En aquest exercici crearàs un array bidimensional on introduiràs 3 notes per
-		 * a 5 alumnes. Es calcularà la nota mitjana de cada alumna i
-		 * s'indicarà si han suspès o no. Crea un array bidimensional capaç de guardar 3
-		 * notes de 5 alumnes. Omple l’array amb un bucle demanant els valors per
-		 * pantalla (nota entre 0 i 10), has d’identificar per pantalla quan és una
-		 * agrupació d’un alumne nou . Recorre l'array, fes la Mitjana aritmètica de les
-		 * 3 notes i indica si l'alumne ha aprovat o suspès
-		 */
-
-		boolean done = false;
+			boolean done = false;
 		int sum;
 
 		int[][] notesAlumnes = new int[5][3];
